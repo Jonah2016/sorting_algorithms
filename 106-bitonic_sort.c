@@ -8,7 +8,8 @@
 void integers_swapper(int *a, int *b);
 void bitonic_merger(int *array, size_t size, size_t start, size_t seq,
 					char flow);
-void bitonic_sequence(int *array, size_t size, size_t start, size_t seq, char flow);
+void bitonic_sequence(int *array, size_t size, size_t start,
+		size_t seq, char flow);
 void bitonic_sort(int *array, size_t size);
 
 /**
@@ -59,7 +60,8 @@ void bitonic_merger(int *array, size_t size, size_t start, size_t seq,
  * @seq: The size of a block of the building bitonic seq.
  * @flow: The direction to sort the bitonic seq block in.
  */
-void bitonic_sequence(int *array, size_t size, size_t start, size_t seq, char flow)
+void bitonic_sequence(int *array, size_t size, size_t start,
+		size_t seq, char flow)
 {
 	size_t extract = seq / 2;
 	char *strn = (flow == UP) ? "UP" : "DOWN";
