@@ -1,8 +1,9 @@
 #include "sort.h"
 
 void sub_array_merger(int *sub_arr, int *buff, size_t front, size_t mid,
-					  size_t back);
-void recursive_merge_sorter(int *sub_arr, int *buff, size_t front, size_t back);
+		size_t back);
+void recursive_merge_sorter(int *sub_arr, int *buff,
+		size_t front, size_t back);
 void merge_sort(int *array, size_t size);
 
 /**
