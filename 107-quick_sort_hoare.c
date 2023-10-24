@@ -39,12 +39,11 @@ int hoare_partitioner(int *array, size_t size, int left, int right)
 	fulcrum = array[right];
 	for (top = left - 1, down = right + 1; top < down;)
 	{
-		do
-		{
+		do {
 			top++;
 		} while (array[top] < fulcrum);
-		do
-		{
+
+		do {
 			down--;
 		} while (array[down] > fulcrum);
 
